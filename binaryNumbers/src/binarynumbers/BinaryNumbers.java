@@ -4,9 +4,9 @@
 * Completed by Konrad Gnat
 * On 12/19/16
 * Task 
-* Given a base- integer, , convert it to binary (base-). Then find and print 
-* the base- integer denoting the maximum number of consecutive 's in 's binary 
-* representation.
+* Given a base-10 integer, n, convert it to binary (base-2). Then find and print 
+* the base-10 integer denoting the maximum number of consecutive 1's in n's 
+* binary representation.
 * 
 * 
 */
