@@ -30,6 +30,28 @@ public abstract class Animal {
         c.eat();
         d.sleep();
         c.sleep();
+        
+        // Casting object casting  - use when 
+        
+        Object dog = new Dog();
+        Dog realDog = (Dog) dog; 
+        realDog.sleep();
+        
+        Object str = "est";
+        String realS = (String) str;
+        realS.getBytes();
+        
+        // What happens when...
+        
+        Dog doggy = new Dog();
+        if (doggy instanceof Animal) {
+            Animal animal = (Animal) doggy;// doesnt matter what doggy
+            // was before, we have all animal methods here
+            // overriden methods are preserved with casting
+            animal.sleep(); 
+        }
+        doggy.sleep();
+        
     }
     
 }
