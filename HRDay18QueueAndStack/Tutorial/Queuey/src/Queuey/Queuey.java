@@ -8,9 +8,9 @@ import java.util.Stack;
 /**
  * youtube tutorial with Kathryn Hodge
  */
-public class Queuey {
+public class Queuey <D> {
 
-    LinkedList queue;
+    LinkedList <D> queue;
     
     // Making a queue instance
     public Queuey() {
@@ -27,29 +27,29 @@ public class Queuey {
     }
     
     // Enquing an item
-    public void enqueue(String n) {
+    public void enqueue(D n) {
         queue.addLast(n);
     }
     
     // Dequeuing an item
-    public String dequeue() {
-        return (String) queue.remove(0);
+    public D dequeue() {
+        return queue.remove(0);
     }
     
     // Peek at the first item
-    public String peek() {
-        return (String) queue.get(0);
+    public D peek() {
+        return queue.get(0);
     }
     public static void main(String[] args) {
-//        Queuey numberQueue = new Queuey();
-//        numberQueue.enqueue(5);
-//        numberQueue.enqueue(6);
-//        numberQueue.enqueue(70);
-//        System.out.println("First out " + numberQueue.dequeue());
-//        System.out.println("peek at first " + numberQueue.peek());
-//        System.out.println("Second out " + numberQueue.dequeue());
-//        System.out.println("Third out  " + numberQueue.dequeue());
-//        
+        Queuey numberQueue = new Queuey();
+        numberQueue.enqueue(5);
+        numberQueue.enqueue(6);
+        numberQueue.enqueue(70);
+        System.out.println("First out " + numberQueue.dequeue());
+        System.out.println("peek at first " + numberQueue.peek());
+        System.out.println("Second out " + numberQueue.dequeue());
+        System.out.println("Third out  " + numberQueue.dequeue());
+        
 //          Queuey str= new Queuey();
 //          str.enqueue("hi");
 //          str.enqueue("sup");

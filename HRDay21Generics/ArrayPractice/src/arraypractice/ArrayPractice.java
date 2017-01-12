@@ -18,6 +18,8 @@ public class ArrayPractice {
     public static void main(String[] args) {
        Integer[] intArray1 = {5, 2, 9, 1, 3};
        Integer[] intArray3 = new Integer[4];
+       intArray3[0] = 34;
+       
        printArray(intArray1);
        Integer[] intArray2 = {5, 2, 9, 1, 3};
        String[] shoppingList = {"avocado", "notpad", "veggies", "rice"};
