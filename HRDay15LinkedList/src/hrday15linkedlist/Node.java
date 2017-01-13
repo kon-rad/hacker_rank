@@ -9,10 +9,10 @@ import java.util.*;
  *
  * @author konradgnat
  */
-public class  Node {
-	int data;
+public class  Node <D> {
+	D data;
 	Node next;
-	Node(int d) {
+	Node(D d) {
         data = d;
         next = null;
     }
