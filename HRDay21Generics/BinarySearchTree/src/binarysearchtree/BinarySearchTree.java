@@ -21,6 +21,12 @@ public class BinarySearchTree {
 
     public static void main(String[] args) {
         // TODO code application logic here
+                NonEmptyBST aTree = new NonEmptyBST(11);
+        aTree.add(22);
+        aTree.add(33);
+        aTree.add(44);
+        aTree.add(55);
+        System.out.println(aTree);
         
     }
     

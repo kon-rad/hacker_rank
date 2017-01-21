@@ -9,7 +9,7 @@ package binarysearchtree;
  *
  * @author konradgnat
  */
-public class EmptyBST<D extends Copmparable> implements Tree<D>{
+public class EmptyBST<D extends Comparable> implements Tree<D>{
     
     public EmptyBST() {
         
