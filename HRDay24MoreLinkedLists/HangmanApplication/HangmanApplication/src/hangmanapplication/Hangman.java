@@ -80,7 +80,7 @@ public class Hangman {
     public boolean gameOver() {
         if(didWeWin()) {
             System.out.println();
-            System.out.println("Congrats! You won! You guess it");
+            System.out.println("Congrats! You won! You guessed it");
             return true;
         } else if (didWeLose()) {
             System.out.println();
@@ -111,11 +111,11 @@ public class Hangman {
     
     public boolean playGuess(char guess) {
         boolean isItAGoodGuess = false;
+        previousGuesses.add(guess);
         for (int i = 0; i < mysteryWord.length(); i++) {
             if(mysteryWord.charAt(i) == guess) {
                 currentGuess.setCharAt((i * 2), guess);
                 isItAGoodGuess = true;
-                previousGuesses.add(guess);
             }
         }
         if(!isItAGoodGuess) {

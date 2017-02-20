@@ -30,7 +30,7 @@ public class HangmanApplication {
             Hangman game = new Hangman();
             
             do {
-                // Draw the things ...
+                // Draw the thing ...
                 System.out.println();
                 System.out.println(game.drawPicture());
                 System.out.println();
