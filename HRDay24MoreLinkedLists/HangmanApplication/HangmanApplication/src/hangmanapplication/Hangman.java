@@ -72,7 +72,6 @@ public class Hangman {
         return current;
     }
     
-    
     public String getFormalCurrentGuess() {
         return "Current Guess: " + currentGuess.toString();
     }
@@ -125,15 +124,6 @@ public class Hangman {
         return isItAGoodGuess;
     }
     
-    //        " - - - - -\n"+
-//        "| |\n"+
-//        "| O\n" +
-//        "| / | \\ \n"+
-//        "| |\n" +
-//        "| / \\ \n" +
-//        "|\n" +
-//        "|\n";
-    
     public String drawPicture() {
         
         switch(currentTry) {
@@ -145,8 +135,6 @@ public class Hangman {
             case 5: return addFirstLegDraw();
             default: return fullPersonDraw();
         }
-        
-        
     }
 
     private String noPersonDraw() {
@@ -225,5 +213,4 @@ public class Hangman {
                     "|\n" +
                     "|\n"; 
     }
-    
 }
