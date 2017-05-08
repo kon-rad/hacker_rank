@@ -19,20 +19,24 @@ public class Solution {
         for (int i = 0; i < returnSplit.length; i++) {
             returnNums[i] = Integer.parseInt(returnSplit[i]);
         }
-        System.out.println(Arrays.toString(returnNums));
 
         String[] dueSplit = dueDate.split(" ");
         int[] dueNums = new int[dueSplit.length];
         for (int i = 0; i < dueSplit.length; i++) {
             dueNums[i] = Integer.parseInt(dueSplit[i]);
         }
-        System.out.println(Arrays.toString(dueNums));
-        System.out.println(returnDate);
-        System.out.println(dueDate);
-        
         if (dueNums[2] >= returnNums[2] && dueNums[0] >= returnNums[0] && dueNums[1] >= returnNums[1])
 	{
-		fine = 42; 
+		fine = 0; 
+	} else if (dueNums[2] == returnNums[2] && dueNums[1] == returnNums[1] && dueNums[0] < returnNums[0])
+	{
+		fine = 15 * (returnNums[0] - dueNums[0]);
+	} else if (dueNums[2] == returnNums[2] && dueNums[1] < returnNums[1])
+	{
+		fine = 500 * (returnNums[1] - dueNums[1]);
+	} else if (dueNums[2] < returnNums[2])
+	{
+		fine = 10000;
 	}
 	System.out.println(fine);
     }
